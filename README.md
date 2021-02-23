@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.com/mhauri/lotto-parser.svg?branch=main)](https://travis-ci.com/mhauri/lotto-parser)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/5219b287ca0f4393b392688a8daa1919)](https://www.codacy.com/gh/mhauri/lotto-parser/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=mhauri/lotto-parser&amp;utm_campaign=Badge_Grade)
-
+[![Codacy Badge](https://app.codacy.com/project/badge/Coverage/5219b287ca0f4393b392688a8daa1919)](https://www.codacy.com/gh/mhauri/lotto-parser/dashboard?utm_source=github.com&utm_medium=referral&utm_content=mhauri/lotto-parser&utm_campaign=Badge_Coverage)
 
 # Lotto Parser
 
