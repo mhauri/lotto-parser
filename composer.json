@@ -1,5 +1,5 @@
 {
-    "name": "mhauri/lotto-api",
+    "name": "mhauri/lotto-parser",
     "description": "Get the lotto numbers from the last draw of Swiss Lotto & Euro Millions",
     "type": "library",
     "license": "MIT",

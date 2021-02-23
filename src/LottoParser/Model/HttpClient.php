@@ -9,7 +9,7 @@ class HttpClient
     public static function create(string $baseUrl): Client
     {
         $headers = [
-            'User-Agent' => 'LottoParser Client (https://github.com/mhauri/lotto-parser)',
+            'User-Agent' => 'LottoParser (https://github.com/mhauri/lotto-parser)',
             'Connection' => 'keep-alive',
             'Content-Type' => 'application/x-www-form-urlencoded; charset=UTF-8',
             'Accept' => 'text/plain, */*',
