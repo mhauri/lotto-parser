@@ -15,7 +15,7 @@ To get the latest results  from Swiss Lotto
     
     use LottoParser\Client\SiwssLotto
     
-    $swisslotto = new SwissLotto();  
+    $lotto = new SwissLotto();  
     
     $data = $lotto->current()->get();
     
