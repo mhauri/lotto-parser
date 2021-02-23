@@ -19,6 +19,11 @@
 
     <coverage cacheDirectory=".phpunit.cache/code-coverage"
               processUncoveredFiles="true">
+        <report>
+            <clover outputFile=".phpunit.cache/coverage-clover.xml"/>
+            <text outputFile="php://stdout" showOnlySummary="true"/>
+        </report>
+
         <include>
             <directory suffix=".php">src</directory>
         </include>
