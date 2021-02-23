@@ -53,9 +53,6 @@ class Swisslos
     }
 
     /**
-     * @param Carbon $date
-     *
-     * @return Document
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function getByDate(Carbon $date): Document

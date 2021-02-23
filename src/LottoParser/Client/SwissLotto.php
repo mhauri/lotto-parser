@@ -6,10 +6,10 @@ use Carbon\Carbon;
 use DiDom\Document;
 use LottoParser\ClientInterface;
 use LottoParser\Exceptions\InvalidWeekdayException;
+use LottoParser\Model\Swisslos;
 use LottoParser\Model\Swisslos\GameTable;
 use LottoParser\Model\Swisslos\SwissLottoDTO;
 use LottoParser\Model\Swisslos\WinningNumbers;
-use LottoParser\Model\Swisslos;
 
 class SwissLotto implements ClientInterface
 {
@@ -97,7 +97,7 @@ class SwissLotto implements ClientInterface
         $winningNumbers = new WinningNumbers();
         $result = $this->document->find('.filter-results li.actual-numbers__number___normal');
         foreach ($result as $item) {
-            $winningNumbers->addNumber((int)trim($item->text()));
+            $winningNumbers->addNumber((int) trim($item->text()));
         }
 
         return $winningNumbers;

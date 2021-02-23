@@ -1,18 +1,11 @@
 <?php
 
-
 namespace LottoParser\Model;
-
 
 use GuzzleHttp\Client;
 
 class HttpClient
 {
-    /**
-     * @param string $baseUrl
-     *
-     * @return Client
-     */
     public static function create(string $baseUrl): Client
     {
         $headers = [

@@ -6,11 +6,11 @@ use Carbon\Carbon;
 use DiDom\Document;
 use LottoParser\ClientInterface;
 use LottoParser\Exceptions\InvalidWeekdayException;
+use LottoParser\Model\Swisslos;
 use LottoParser\Model\Swisslos\EuroMillionsDTO;
 use LottoParser\Model\Swisslos\GameTable;
 use LottoParser\Model\Swisslos\SuperStars;
 use LottoParser\Model\Swisslos\WinningNumbers;
-use LottoParser\Model\Swisslos;
 
 class EuroMillions implements ClientInterface
 {
@@ -35,7 +35,6 @@ class EuroMillions implements ClientInterface
     public function byDate(Carbon $date)
     {
         if ($date->isTuesday() || $date->isFriday()) {
-
             $this->document = $this->swisslos->getByDate($date);
             $this->parse();
 
@@ -95,7 +94,7 @@ class EuroMillions implements ClientInterface
         $winningNumbers = new WinningNumbers();
         $items = $this->element()->find('li.actual-numbers__number___normal');
         foreach ($items as $item) {
-            $winningNumbers->addNumber((int)trim($item->text()));
+            $winningNumbers->addNumber((int) trim($item->text()));
         }
 
         return $winningNumbers;
@@ -106,7 +105,7 @@ class EuroMillions implements ClientInterface
         $superStars = new SuperStars();
         $items = $this->element()->find('li.actual-numbers__number___superstar span.transform__center');
         foreach ($items as $item) {
-            $superStars->addNumber((int)trim($item->text()));
+            $superStars->addNumber((int) trim($item->text()));
         }
 
         return $superStars;
@@ -124,7 +123,7 @@ class EuroMillions implements ClientInterface
         foreach ($table as $key => $item) {
             $count = count($item->find('td')[0]->find('.euromillions-quotes__game-table___superstar'));
             $gameTable->addRow(
-                trim($item->find('td')[0]->text().str_repeat("*", $count)),
+                trim($item->find('td')[0]->text().str_repeat('*', $count)),
                 trim($item->find('td')[1]->text()),
                 trim($item->find('td')[2]->text())
             );
