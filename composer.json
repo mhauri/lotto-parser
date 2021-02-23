@@ -1,0 +1,26 @@
+{
+    "name": "mhauri/lotto-api",
+    "description": "Get the lotto numbers from the last draw of Swiss Lotto & Euro Millions",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marcel Hauri",
+            "email": "marcel@hauri.xyz"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.2",
+        "imangazaliev/didom": "^1.16",
+        "nesbot/carbon": "^2.45"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "LottoParser\\": "src/LottoParser/"
+        },
+        "exclude-from-classmap": ["/tests/"]
+    }
+}
