@@ -64,7 +64,7 @@ class SwissLotto implements ClientInterface
             'winningNumbers' => $this->result->getWinningNumbers(),
             'luckyNumber' => $this->result->getLuckyNumber(),
             'replayNumber' => $this->result->getReplayNumber(),
-            'jackpotNextDraw' => $this->getJackpotNextDraw(),
+            'jackpotNextDraw' => $this->result->getJackpotNextDraw(),
             'gameTable' => $this->result->getGameTable(),
         ];
     }
