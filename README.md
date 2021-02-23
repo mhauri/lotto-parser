@@ -26,7 +26,7 @@ To get the latest results from Swiss Lotto
      // to Array    
      $data = $lotto->current()->toArray();    
      // to JSON    
-	 $data = $lotto->current()->toJson(); 
+     $data = $lotto->current()->toJson(); 
 ```   
 
 To get the results from a specific date
