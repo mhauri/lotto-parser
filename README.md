@@ -43,7 +43,7 @@ To get the results from a specific date
     $data = $lotto->byDate($date)->toArray();
     
     // to JSON
-    $data = $lotto->current($date)->toJson();
+    $data = $lotto->byDate($date)->toJson();
 ```
 
 The same applies for Euro Millions, just replace `$lotto = new SwissLotto()` with
