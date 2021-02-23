@@ -33,7 +33,7 @@ To get the results from a specific date
 
 ```php 
 	
-	<?php    
+    <?php    
 	
     use Carbon\Carbon;    
     use LottoParser\Client\SiwssLotto       
@@ -45,7 +45,7 @@ To get the results from a specific date
     // to Array    
     $data = $lotto->byDate($date)->toArray();    
     // to JSON    
-	$data = $lotto->byDate($date)->toJson();
+    $data = $lotto->byDate($date)->toJson();
 
 ```
 
