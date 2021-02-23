@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.com/mhauri/lotto-parser.svg?branch=main)](https://travis-ci.com/mhauri/lotto-parser)
+
+
 
 # Lotto Parser
 
