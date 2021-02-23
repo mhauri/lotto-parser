@@ -1,11 +1,10 @@
-
-[![Build Status](https://img.shields.io/travis/com/mhauri/lotto-parser?style=flat-square)](https://travis-ci.com/mhauri/lotto-parser)  
-[![Codacy Badge](https://img.shields.io/codacy/grade/5219b287ca0f4393b392688a8daa1919?style=flat-square)](https://www.codacy.com/gh/mhauri/lotto-parser/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=mhauri/lotto-parser&amp;utm_campaign=Badge_Grade)  
+[![Build Status](https://img.shields.io/travis/com/mhauri/lotto-parser?style=flat-square)](https://travis-ci.com/mhauri/lotto-parser)
+[![Codacy Badge](https://img.shields.io/codacy/grade/5219b287ca0f4393b392688a8daa1919?style=flat-square)](https://www.codacy.com/gh/mhauri/lotto-parser/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=mhauri/lotto-parser&amp;utm_campaign=Badge_Grade)
 [![Codacy Badge](https://img.shields.io/codacy/coverage/5219b287ca0f4393b392688a8daa1919?label=code%20coverage&style=flat-square)](https://www.codacy.com/gh/mhauri/lotto-parser/dashboard?utm_source=github.com&utm_medium=referral&utm_content=mhauri/lotto-parser&utm_campaign=Badge_Coverage)
 
 # Lotto Parser
 
-Php library for parsing Swiss Lotto and Euro Millions results.
+PHP library for parsing [Swiss Lotto](https://www.swisslos.ch/en/swisslotto/information/winning-numbers/winning-numbers.html) and [Euro Millions](https://www.swisslos.ch/en/euromillions/information/winning-numbers/winning-numbers.html) results from [Swisslos](https://www.swisslos.ch/en/home.html).
 
 ## Installation
 ```  
